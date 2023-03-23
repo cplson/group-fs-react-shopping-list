@@ -1,6 +1,4 @@
-// add useState
-// add useEffect
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../Header/Header.jsx'
 import ShoppingList from '../ShoppingList/ShoppingList.jsx';
@@ -9,7 +7,6 @@ import './App.css';
 
 function App() {
 
-// Variable to store shopping list
 let [shoppingList, setShoppingList] = useState([]);
 
 // listening for user clicks
@@ -29,6 +26,21 @@ const fetchShoppingList = () => {
         console.log(err);
     })
 }
+
+    const addItem = (newItem) => {
+        console.log('New item:', newItem);
+
+        axios({
+            method: 'POST',
+            url: '/',
+            data: newStudent
+        }).then((response) => {
+            console.log('Response:', response);
+            fetchShoppingList();
+        }).catch((error) => {
+            console.log('Error on post:', error);
+        })
+    }
 
     return (
         <div className="App">
