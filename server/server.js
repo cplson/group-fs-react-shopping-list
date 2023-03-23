@@ -13,7 +13,6 @@ app.use(express.static('build'));
 const listRouter = require('./routes/list.route.js');
 app.use('/list', listRouter);
 
-
 /** ---------- START SERVER ---------- **/
 app.listen(PORT,  () => {
     console.log('Listening on port: ', PORT);
