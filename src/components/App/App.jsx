@@ -1,10 +1,25 @@
 import React from 'react';
-
 import Header from '../Header/Header.jsx'
 import './App.css';
 
 
 function App() {
+
+
+
+// fetching shopping list
+const fetchShoppingList = () => {
+    axios.get('/list')
+    .then(response => {
+        setShoppingList(response.data)
+    console.log('This is the shopping list, setShoppingList')
+
+    }).catch(err => {
+        alert('err Adding List');
+        console.log(err);
+    })
+}
+
     return (
         <div className="App">
             <Header />
