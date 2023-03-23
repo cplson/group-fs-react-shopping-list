@@ -1,10 +1,13 @@
-import React from 'react';
+// add useState
+// add useEffect
+import React, {useState} from 'react';
 import Header from '../Header/Header.jsx'
 import './App.css';
 
 
 function App() {
-
+// // Variable to store 
+// let [ShoppingList, setShoppingList] = useState([])
 
 
 // fetching shopping list
@@ -14,11 +17,11 @@ const fetchShoppingList = () => {
         setShoppingList(response.data)
     console.log('This is the shopping list, setShoppingList')
 
-//     }).catch(err => {
-//         alert('err Adding List');
-//         console.log(err);
-//     })
-// }
+    }).catch(err => {
+        alert('err Adding List');
+        console.log(err);
+    })
+}
 
     return (
         <div className="App">
