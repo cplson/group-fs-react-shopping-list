@@ -14,11 +14,11 @@ const fetchShoppingList = () => {
         setShoppingList(response.data)
     console.log('This is the shopping list, setShoppingList')
 
-    }).catch(err => {
-        alert('err Adding List');
-        console.log(err);
-    })
-}
+//     }).catch(err => {
+//         alert('err Adding List');
+//         console.log(err);
+//     })
+// }
 
     return (
         <div className="App">
