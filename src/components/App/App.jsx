@@ -1,14 +1,21 @@
 // add useState
 // add useEffect
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import Header from '../Header/Header.jsx'
+import ShoppingList from '../ShoppingList/ShoppingList.jsx';
 import './App.css';
 
 
 function App() {
-// Variable to store 
-let [ShoppingList, setShoppingList] = useState([])
 
+// Variable to store shopping list
+let [shoppingList, setShoppingList] = useState([]);
+
+// listening for user clicks
+useEffect(() =>{
+    fetchShoppingList()
+}, [])
 
 // fetching shopping list
 const fetchShoppingList = () => {
@@ -29,6 +36,9 @@ const fetchShoppingList = () => {
             <main>
                 <p>Under Construction...</p>
             </main>
+            <div>
+              <ShoppingList/> 
+            </div>
         </div>
     );
 }
