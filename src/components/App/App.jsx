@@ -33,7 +33,7 @@ const fetchShoppingList = () => {
         axios({
             method: 'POST',
             url: '/',
-            data: newStudent
+            data: newItem
         }).then((response) => {
             console.log('Response:', response);
             fetchShoppingList();
