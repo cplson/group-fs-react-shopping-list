@@ -8,16 +8,10 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     console.log('in server POST');
-    // let newItem = {
-    //     name: req.body.name,
-    //     quantity: req.body.quantity,
-    //     unit: req.body.unit
-    // }
-
-    let newItem ={
-        name: 'a',
-        quantity: 1,
-        unit: 'lb'
+    let newItem = {
+        name: req.body.name,
+        quantity: req.body.quantity,
+        unit: req.body.unit
     }
 
     const queryText = `INSERT INTO "shopping_list"("name", "quantity", "unit")
