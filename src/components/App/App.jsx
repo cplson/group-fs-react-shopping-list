@@ -6,8 +6,8 @@ import './App.css';
 
 
 function App() {
-// // Variable to store 
-// let [ShoppingList, setShoppingList] = useState([])
+// Variable to store 
+let [ShoppingList, setShoppingList] = useState([])
 
 
 // fetching shopping list
