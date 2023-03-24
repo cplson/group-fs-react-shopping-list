@@ -1,9 +1,13 @@
 # React Shopping List
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
 
-## Description
+We created a blank DOM, to soothe the worried mind. 
 
-Your project description goes here. What problem did you solve? How did you solve it?
+The blank canvas is site to come to when the user feels overwhelmed by life. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+Jumpstart Innovation Leadership Journey is please to offer a respite for tired minds. 
+
+## Features 
+
+Because there is nothing on the DOM, our site loads exceedingly fast. 
+
